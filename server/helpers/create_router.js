@@ -5,7 +5,7 @@ const createRouter = function(collection){
 
   const router = express.Router();
 
-// INDEX
+  // INDEX
 
   router.get('/', (req, res) => {
     collection
@@ -19,15 +19,15 @@ const createRouter = function(collection){
       });
   });
 
-
-// SHOW
-
-
-
-// UPDATE
+  // SHOW
 
 
 
+  // UPDATE
 
 
-}
+
+  return router;
+};
+
+module.exports = createRouter;
