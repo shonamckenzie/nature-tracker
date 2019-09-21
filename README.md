@@ -18,3 +18,13 @@ A user should be able to:
 
 - https://www.highcharts.com/ HighCharts is an open-source library for rendering responsive charts.
 - https://leafletjs.com/ Leaflet is an open-source library for rendering maps and map functionality.
+
+## To install
+
+- run npm install in client and server folders
+
+## To run
+
+- mongod
+- npm run serve
+- npm run server:dev
