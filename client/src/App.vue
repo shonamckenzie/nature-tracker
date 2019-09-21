@@ -1,11 +1,13 @@
 <template>
   <div id="app">
     <h3>Wildlife App</h3>
+    <species-list :allSpecies="allSpecies"/>
   </div>
 </template>
 
 <script>
-import SpeciesService from './services/SpeciesService'
+import SpeciesService from './services/SpeciesService';
+import SpeciesList from './components/SpeciesList'
 
 export default {
   name: 'app',
@@ -14,6 +16,9 @@ export default {
       allSpecies: [],
       selectedSpecies: {}
     }
+  },
+  components: {
+    'species-list': SpeciesList
   },
   mounted() {
     this.fetchData();
