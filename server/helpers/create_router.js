@@ -21,11 +21,39 @@ const createRouter = function(collection){
 
   // SHOW
 
+  router.get('/:id', (req, res) =>{
+    const id = req.params.id;
+    collection
+      .findOne({_id: ObjectId(id)})
+      .then((doc) => res.json(doc))
+      .catch((err) => {
+        console.error(err);
+        res.status(500);
+        res.json({status: 500, error: err});
+      });
 
+  })
 
   // UPDATE
 
-
+  router.put('/:id', (req, res) => {
+    const id = req.params.id;
+    const updatedData = req.body;
+    collection
+      .findOneAndUpdate(
+        { _id: ObjectId(id)},
+        { $set: updatedData },
+        { returnOriginal: false }
+      )
+      .then((result) => {
+        res.json(result.value)
+      })
+      .catch((err) => {
+        console.error(err);
+        res.status(500);
+        res.json({status: 500, error: err});
+      })
+  })
 
   return router;
 };
