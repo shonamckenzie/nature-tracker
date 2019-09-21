@@ -4,19 +4,21 @@
       <!-- This div is just a placeholder - to be replaced by species-card component -->
       <p>{{ species.name }}</p>
     </div>
+    <add-sighting-form :allSpecies="allSpecies"/>
   </div>
 </template>
 
 <script>
 import SpeciesService from '../services/SpeciesService';
+import AddSightingForm from './AddSightingForm';
 
 export default {
   name: 'species-list',
   props: ['allSpecies'],
   components: {
     // 'species-card': SpeciesCard,
-    // 'add-sighting-form': AddSightingForm
-    // Uncomment when these are added
+    // Uncomment when this is added
+    'add-sighting-form': AddSightingForm
   }
 }
 </script>
