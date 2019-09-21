@@ -14,7 +14,7 @@ db.species.insertMany(
       },
       {
         "location": "Shotts",
-        "date": " 2019-09-02"
+        "date": "2019-09-02"
       }
     ]
   },
@@ -29,7 +29,7 @@ db.species.insertMany(
       },
       {
         "location": "Shotts",
-        "date": " 2019-09-02"
+        "date": "2019-09-02"
       }
     ]
   }
