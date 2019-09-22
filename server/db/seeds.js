@@ -19,7 +19,6 @@ db.species.insertMany(
       }
     ]
   },
-
   {
     "name": "Red Fox",
     "about": "The Red fox is the largest of the true foxes and is present across the entire Northern Hemisphere. They make their homes by digging burrows (dens) in the ground",
@@ -44,16 +43,23 @@ db.species.insertMany(
   },
   {
     "name": "Red Squirrel",
-    "description": "Mammal with coat of red fur, large bushy tail",
-    "habitat": "Trees",
+    "about": "The red squirrel is a species of tree squirrel common throughout Europe and Asia. The squirrel makes a nest out of twigs in a branch-fork, forming a domed structure about 25 to 30 cm in diameter.",
+    "description": "The red squirrel has a typical head-and-body length of 19 to 23 cm, a tail length of 15 to 20cm which helps them balance and steer when jumping from tree to tree. The red squirrel has a red coat with white-cream underside and sharp curved claws. They eat seeds of trees, fungi, nuts, berries and young shoots",
+    "habitat": "woods, scots pine & norway spruce trees",
+    "image": "../client/images/squirrel.jpg",
+    "fun facts": "Each litter averages 3 young squirrels, called kits. They are born blind and deaf and devlop their teeth by 42 days",
     "sightings": [
       {
-        "location": "East Kilbride",
-        "date": "2019-09-01"
+        "location": "Doune",
+        "date": "2019-07-14",
+        "location coordinates lat": "56.201541",
+        "location coordinates lon": "-4.040565"
       },
       {
-        "location": "Shotts",
-        "date": "2019-09-02"
+        "location": "Stirling",
+        "date": "2019-05-21",
+        "location coordinates lat": "56.116523",
+        "location coordinates lon": "-3.936903"
       }
     ]
   }
