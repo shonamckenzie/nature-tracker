@@ -23,4 +23,3 @@ export default {
 
 </style>
 
-// changed component name and need to comment for file change to be registered to enable committing
