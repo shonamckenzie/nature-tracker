@@ -59,6 +59,10 @@ export default {
       allSightings.push(newSighting);
       const updatedSightings = { sightings: allSightings };
       SpeciesService.updateSpecies(this.selectedSpecies._id, updatedSightings);
+      this.date = null,
+      this.location = "",
+      this.locationLat = null,
+      this.locationLon = null
     }
   }
 };
