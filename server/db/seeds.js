@@ -22,16 +22,23 @@ db.species.insertMany(
 
   {
     "name": "Red Fox",
-    "description": "Mammal with coat of red fur, large bushy tail",
-    "habitat": "Woodland and hedgerows, also gardens and urban areas",
+    "about": "The Red fox is the largest of the true foxes and is present across the entire Northern Hemisphere. They make their homes by digging burrows (dens) in the ground",
+    "description": "The Red fox has an elongated body and relatively short limbs, their coats are generally bright reddish-rusty with yellow tints. The red fox primarily feeds on small rodents, though it may also target rabbits, game birds, reptiles, fruit and vegetable matter is also eaten sometimes.",
+    "habitat": "Forests, grasslands, woodland and also gardens and urban areas",
+    "image": "../client/images/fox.jpg",
+    "fun facts": "A male fox is called a Dog, a female fox is called a Vixen, a young fox is called either a Kit. A group of foxes is called a Skulk. Like a cat the foxes thick tail (or brush) aids it's balance",
     "sightings": [
       {
         "location": "East Kilbride",
-        "date": "2019-09-01"
+        "date": "2019-09-01",
+        "location coordinates lat": "57.104542",
+        "location coordinates lon": "-7.328500"
       },
       {
-        "location": "Shotts",
-        "date": "2019-09-02"
+        "location": "Edinburgh",
+        "date": "2019-09-02",
+        "location coordinates lat": "55.953251",
+        "location coordinates lon": "-3.188267"
       }
     ]
   },
