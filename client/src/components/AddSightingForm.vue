@@ -48,14 +48,17 @@ export default {
   },
   methods: {
     addSighting(event) {
+      event.preventDefault();
       const newSighting = {
         date: this.date,
         location: this.location,
         locationLat: this.locationLat,
         locationLon: this.locationLon
       };
-      const updatedSightings = selectedSpecies.sightings.push(newSighting);
-      SpeciesService.updateSpecies(selectedSpecies.id, updatedSightings);
+      const allSightings = this.selectedSpecies.sightings;
+      allSightings.push(newSighting);
+      const updatedSightings = { sightings: allSightings };
+      SpeciesService.updateSpecies(this.selectedSpecies._id, updatedSightings);
     }
   }
 };
