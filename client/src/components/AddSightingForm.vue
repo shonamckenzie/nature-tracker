@@ -27,6 +27,7 @@
       <label for="locationLon">Location Longitude:</label>
       <input type="number" id="locationLon" v-model="locationLon" />
     </div>
+    <input type="submit" value="Add Sighting">
   </form>
 </template>
 
