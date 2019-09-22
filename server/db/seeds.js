@@ -119,65 +119,77 @@ db.species.insertMany(
   },
   {
     "name": "Bat",
-    "about": "",
-    "description": "",
-    "habitat": "",
-    "image": "",
-    "funFacts": "",
+    "about": "Bats have their forelimbs adapted as wings, they are the only mammals naturally capable of true and sustained flight. Bats hang upside down from their feet, a posture known as roosting.",
+    "description": "The largest bats are the flying foxes which can weigh 1.6kg. Most bats are nocturnal, and many roost in caves or other refuges. Many bats are insectivores, and most of the rest are frugivores (fruit-eaters).",
+    "habitat": "Trees, caves, houses.",
+    "image": "../client/images/bat.jpg",
+    "funFacts": "Bat calls are some of the loudest airborne animal sounds, and can range in intensity from 60 to 140 decibels.",
     "sightings": [
       {
-        "location": "",
-        "date": "",
-        "locationLat": "",
-        "locationLon": ""
+        "location": "Clackmannanshire",
+        "date": "2019-06-16",
+        "locationLat": "56.147068",
+        "locationLon": "-3.850709"
+      },
+      {
+        "location": "West Linton",
+        "date": "2019-06-30",
+        "locationLat": "55.726855",
+        "locationLon": "-3.436863"
       }
     ]
   },
   {
     "name": "Buzzard",
-    "about": "",
-    "description": "",
-    "habitat": "",
-    "image": "",
-    "funFacts": "",
+    "about": "The common Buzzard is a medium to large bird of prey which has a large range.The buzzard feeds mainly on small rodents such as voles",
+    "description": "The buzzard builds a nest typically in trees and hunts from a perch. Most buzzards are dark brown on the uppserside of the head and mantle, A pale U across breast is often present. The tail will usuall be narrowly barred grey-brown and dark brown with a pale tip.",
+    "habitat": "woodlands, forest edge or shelterbelts",
+    "image": "../client/images/buzzard.jpg",
+    "funFacts": "Buzzards readily adjust their direction, tail and wing placement and flying height to adjust for the surrounding environment and wind conditions.",
     "sightings": [
       {
-        "location": "",
-        "date": "",
-        "locationLat": "",
-        "locationLon": ""
+        "location": "Carron Valley",
+        "date": "2019-09-21",
+        "locationLat": "56.031593",
+        "locationLon": "-4.049818"
+      },
+      {
+        "location": "Dunfermline",
+        "date": "2019-07-27",
+        "locationLat": "56.068703",
+        "locationLon": "-3.467397"
       }
     ]
   },
   {
     "name": "Brown Hare",
-    "about": "",
-    "description": "",
-    "habitat": "",
-    "image": "",
-    "funFacts": "",
+    "about": "The Brown Hare is among the largest hare species.  They are generally nocturnal and shy in nature. Hares don't use burrows, but make a small depression in the ground among long grass (form).",
+    "description": "The brown hare has very long black-tipped ears; large, long, powerful hind legs. They are much redder than the mountain hare, and with a black-topped tail. Tender grass shoots, including cereal crops, are their main foods.",
+    "habitat": "Grassland, arable land",
+    "image": "../client/images/hare.jpg",
+    "funFacts": "Brown hares live in very exposed habitats, and they rely on acute senses and running at speeds of up to 45mph to evade predators.",
     "sightings": [
       {
-        "location": "",
-        "date": "",
-        "locationLat": "",
-        "locationLon": ""
+        "location": "Biggar",
+        "date": "2019-06-20",
+        "locationLat": "55.61667",
+        "locationLon": "-3.51667"
       }
     ]
   },
   {
     "name": "Capercaillie",
-    "about": "",
-    "description": "",
-    "habitat": "",
-    "image": "",
-    "funFacts": "",
+    "about": "The Capercaillie is the largest member of the grouse family.  In the UK they are only found in Scotland",
+    "description": "The male capercaillie body feathers are dark grey to dark brown with a metallic green breast and bright red spot of naked skin above each eye. Their diet consists of buds, leaves, berries, insects and conifer needles",
+    "habitat": "Mature conifer forests with open canopy.",
+    "image": "../client/images/capercaillie",
+    "funFacts": "A lek is a group of male animals that gather together to display, usually competing for females.",
     "sightings": [
       {
-        "location": "",
-        "date": "",
-        "locationLat": "",
-        "locationLon": ""
+        "location": "Blair Atholl",
+        "date": "2019-08-16",
+        "locationLat": "56.76559",
+        "locationLon": "-3.861007"
       }
     ]
   }
