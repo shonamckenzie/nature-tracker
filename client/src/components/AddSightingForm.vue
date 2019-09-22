@@ -3,8 +3,12 @@
     <h3>Add a New Sighting</h3>
     <div>
       <label for="name">Species:</label>
-      <select id="name" v-model="id" required >
-        <option v-for="species in allSpecies" :value="species._id" :key="species.name">{{ species.name }}</option>
+      <select id="name" v-model="selectedSpecies" required>
+        <option
+          v-for="species in allSpecies"
+          :value="species"
+          :key="species.name"
+        >{{ species.name }}</option>
       </select>
     </div>
     <div>
@@ -27,21 +31,30 @@
 </template>
 
 <script>
+import SpeciesService from "../services/SpeciesService";
+
 export default {
   name: "add-sighting-form",
   props: ["allSpecies"],
   data() {
     return {
-      id: null,
+      selectedSpecies: this.species,
       date: null,
       location: "",
       locationLat: null,
       locationLon: null
-    }
+    };
   },
   methods: {
     addSighting(event) {
-
+      const newSighting = {
+        date: this.date,
+        location: this.location,
+        locationLat: this.locationLat,
+        locationLon: this.locationLon
+      };
+      const updatedSightings = selectedSpecies.sightings.push(newSighting);
+      SpeciesService.updateSpecies(selectedSpecies.id, updatedSightings);
     }
   }
 };
