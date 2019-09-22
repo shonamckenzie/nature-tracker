@@ -2,8 +2,8 @@
 <div class="species-card">
   <h3>{{ species.name }}</h3>
   <p>Description: </p>
-  <p>Habitat: </p>
   <p>Sightings: </p>
+  <button v-on:click="displayInfo">More Info &rarr;</button>
 </div>
 </template>
 
