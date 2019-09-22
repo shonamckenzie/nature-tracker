@@ -13,10 +13,12 @@ export default {
   name: 'species-card',
   props: ['species'],
   methods: {
-      
-    }
-  }
+      displayInfo() {
+        
+      }
+  },
 }
+
 </script>
 
 <style lang="css" scoped>
