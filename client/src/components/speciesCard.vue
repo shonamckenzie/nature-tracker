@@ -1,8 +1,7 @@
 <template lang="html">
 <div class="species-card">
   <h3>{{ species.name }}</h3>
-  <p>Description: </p>
-  <p>Sightings: </p>
+  <p>Sightings: {{ species.sightings }}</p>
   <button v-on:click="displayInfo">More Info &rarr;</button>
 </div>
 </template>
@@ -14,7 +13,7 @@ export default {
   name: 'species-card',
   props: ['species'],
   methods: {
-
+      
     }
   }
 }
