@@ -2,7 +2,7 @@
   <div id="species-detail-container">
     <species-header :title="species.name" />
     <div id="species-info">
-      <div id="picture">
+      <div id="species-picture">
         <species-image :imageUrl="species.image_url"></species-image>
       </div>
       <div id="species-text">
@@ -22,8 +22,14 @@
 </template>
 
 <script>
+import AddSightingForm from "@/components/AddSightingForm";
+
 export default {
-}
+  name: 'speciesDetail',
+  props: ["selectedSpecies"],
+  components: {
+  }
+};
 </script>
 
 <style lang="css" scoped>
