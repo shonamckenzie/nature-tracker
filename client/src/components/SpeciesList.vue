@@ -1,7 +1,7 @@
 <template>
   <div id="species-list">
     <div class="species" v-for="species in allSpecies" :key="species.name">
-      <!-- This div is just a placeholder - to be replaced by species-card component -->
+      <species-card v-for="name in species" :species="species"></species-card>
       <p>{{ species.name }}</p>
     </div>
     <add-sighting-form :allSpecies="allSpecies"/>
@@ -16,8 +16,7 @@ export default {
   name: 'species-list',
   props: ['allSpecies'],
   components: {
-    // 'species-card': SpeciesCard,
-    // Uncomment when this is added
+    'species-card': SpeciesCard,
     'add-sighting-form': AddSightingForm
   }
 }
