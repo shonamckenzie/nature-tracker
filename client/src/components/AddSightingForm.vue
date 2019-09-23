@@ -1,11 +1,11 @@
 <template>
   <form v-on:submit="addSighting" method="post">
     <h3>Add a New Sighting</h3>
-    <div>
+    <div v-if="speciesOptions.length > 1">
       <label for="name">Species:</label>
       <select id="name" v-model="selectedSpecies" required>
         <option
-          v-for="species in allSpecies"
+          v-for="species in speciesOptions"
           :value="species"
           :key="species.name"
         >{{ species.name }}</option>
@@ -36,7 +36,7 @@ import SpeciesService from "../services/SpeciesService";
 
 export default {
   name: "add-sighting-form",
-  props: ["allSpecies"],
+  props: ["speciesOptions"],
   data() {
     return {
       selectedSpecies: this.species,
@@ -55,8 +55,10 @@ export default {
         locationLat: this.locationLat,
         locationLon: this.locationLon
       };
-      this.selectedSpecies.sightings.push(newSighting);
-      SpeciesService.updateSpecies(this.selectedSpecies._id, this.selectedSpecies.sightings);
+      const speciesToUpdate = this.speciesOptions.length > 1 ? this.selectedSpecies : this.speciesOptions;
+      speciesToUpdate.sightings.push(newSighting);
+      const updatedSightings = { sightings: speciesToUpdate.sightings };
+      SpeciesService.updateSpecies(speciesToUpdate._id, updatedSightings);
       this.selectedSpecies = null;
       this.date = null,
       this.location = "",
