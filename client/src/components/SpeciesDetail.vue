@@ -13,8 +13,8 @@
         <div
           class="sightings" v-for="(sighting, key) in species.sightings" :key="key">
           <p v-if="sighting.location">Location Sighted: {{ sighting.location }}<span v-if="sighting.date"> Date Sighted: {{ sighting.date }}</span></p>
-          <add-sighting-form :allSpecies="species"/>
         </div>
+          <add-sighting-form :allSpecies="species"/>
       </div>
     </div>
   </div>
