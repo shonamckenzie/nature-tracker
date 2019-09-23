@@ -1,10 +1,10 @@
 <template lang="html">
-<div class="species-card">
-  <h3>{{ species.name }}</h3>
-  <p>About: {{ species.about }}</p>
-  <img id="species-image" :src="species.image" :alt="species.name" />
-  <button v-on:click="displayInfo">More Info &rarr;</button>
-</div>
+  <div class="species-card">
+    <h3>{{ species.name }}</h3>
+    <p>About: {{ species.about }}</p>
+    <img id="species-image" :src="species.image" :alt="species.name" />
+    <button v-on:click="displayInfo">Find Out More! &rarr;</button>
+  </div>
 </template>
 
 <script>
@@ -14,9 +14,9 @@ export default {
   name: 'species-card',
   props: ['species'],
   methods: {
-      displayInfo() {
-        eventBus.$emit('species-selected', this.species)
-      }
+    displayInfo() {
+      eventBus.$emit('species-selected', this.species)
+    }
   },
 }
 
@@ -24,21 +24,25 @@ export default {
 
 <style lang="css" scoped>
 #species-image {
-  height: 20%;
-  width: 20%;
+  width: 15em;
 }
 
 .species-card {
-    align-items: center;
-    align-content:space-between;
-    box-sizing: content-box;
-    background: darkgreen;
-    margin-bottom: 20px;
-    padding: 20px;
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-  }
+  align-items: center;
+  align-content:space-between;
+  box-sizing: content-box;
+  background: darkgreen;
+  margin-bottom: 20px;
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  background-color: brown;
+  color: white;
+}
 
 
 
