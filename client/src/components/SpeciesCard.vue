@@ -14,7 +14,7 @@ export default {
   props: ['species'],
   methods: {
       displayInfo() {
-        
+        eventBus.$emit('species-selected', this.species)
       }
   },
 }
@@ -24,4 +24,3 @@ export default {
 <style lang="css" scoped>
 
 </style>
-

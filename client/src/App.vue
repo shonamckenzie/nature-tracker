@@ -6,8 +6,9 @@
 </template>
 
 <script>
+import {eventBus} from './main.js';
 import SpeciesService from './services/SpeciesService';
-import SpeciesList from './components/SpeciesList'
+import SpeciesList from './components/SpeciesList';
 
 export default {
   name: 'app',
@@ -22,6 +23,9 @@ export default {
   },
   mounted() {
     this.fetchData();
+    eventBus.$on('species-selected', (species) => {
+      this.selectedSpecies = species;
+    })
   },
   methods: {
     fetchData() {
