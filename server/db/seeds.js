@@ -182,7 +182,7 @@ db.species.insertMany(
     "about": "The Capercaillie is the largest member of the grouse family.  In the UK they are only found in Scotland",
     "description": "The male capercaillie body feathers are dark grey to dark brown with a metallic green breast and bright red spot of naked skin above each eye. Their diet consists of buds, leaves, berries, insects and conifer needles",
     "habitat": "Mature conifer forests with open canopy.",
-    "image": "images/capercaillie",
+    "image": "images/capercaillie.jpg", 
     "funFacts": "A lek is a group of male animals that gather together to display, usually competing for females.",
     "sightings": [
       {
