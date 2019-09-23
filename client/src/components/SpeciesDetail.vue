@@ -14,7 +14,7 @@
           class="sightings" v-for="(sighting, key) in species.sightings" :key="key">
           <p v-if="sighting.location">Location Sighted: {{ sighting.location }}<span v-if="sighting.date"> Date Sighted: {{ sighting.date }}</span></p>
         </div>
-          <add-sighting-form v-if="species._id" :allSpecies="species"/>
+          <add-sighting-form v-if="species._id" :speciesOptions="species"/>
       </div>
     </div>
   </div>
