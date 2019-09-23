@@ -57,6 +57,7 @@ export default {
       };
       this.selectedSpecies.sightings.push(newSighting);
       SpeciesService.updateSpecies(this.selectedSpecies._id, this.selectedSpecies.sightings);
+      this.selectedSpecies = null;
       this.date = null,
       this.location = "",
       this.locationLat = null,
