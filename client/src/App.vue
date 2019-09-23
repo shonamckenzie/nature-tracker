@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <h3>Wildlife App</h3>
+    <sightings-chart></sightings-chart>
     <species-list :allSpecies="allSpecies"/>
     <species-detail :species="selectedSpecies"/>
   </div>
@@ -11,6 +12,7 @@ import {eventBus} from './main.js';
 import SpeciesService from './services/SpeciesService';
 import SpeciesList from './components/SpeciesList';
 import SpeciesDetail from './components/SpeciesDetail';
+import SightingsChart from './components/SightingsChart';
 
 export default {
   name: 'app',
@@ -22,7 +24,8 @@ export default {
   },
   components: {
     'species-list': SpeciesList,
-    'species-detail': SpeciesDetail
+    'species-detail': SpeciesDetail,
+    'sightings-chart': SightingsChart
   },
   mounted() {
     this.fetchData();
