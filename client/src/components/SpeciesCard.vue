@@ -29,10 +29,13 @@ export default {
 }
 
 .species-card {
-    box-sizing: border-box;
+    align-items: center;
+    align-content:space-between;
+    box-sizing: content-box;
     background: darkgreen;
     margin-bottom: 20px;
     padding: 20px;
+    margin: 20px;
     display: flex;
     flex-direction: column;
   }

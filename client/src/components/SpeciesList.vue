@@ -31,6 +31,8 @@ export default {
 }
 
 .species {
+  display: grid;
+  border-radius: 30%;
   width: 30%;
 }
 
