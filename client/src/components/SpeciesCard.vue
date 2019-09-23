@@ -2,6 +2,8 @@
 <div class="species-card">
   <h3>{{ species.name }}</h3>
   <p>Sightings: {{ species.sightings }}</p>
+  <img :src="species.image" alt="">
+  
   <button v-on:click="displayInfo">More Info &rarr;</button>
 </div>
 </template>
