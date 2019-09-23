@@ -32,18 +32,16 @@ export default {
           }
         },
         series: [
-                {
-                    name: 'Total Sightings',
-                    data: this.allSpecies.map(species => species.sightings.length)
-                }
+          {
+            name: "Total Sightings",
+            data: this.allSpecies.map(species => species.sightings.length)
+          }
         ]
-      }
+      };
     }
   },
   props: ["allSpecies"]
 };
-
-
 </script>
 
 <style>
