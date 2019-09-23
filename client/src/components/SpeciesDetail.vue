@@ -1,9 +1,9 @@
 <template lang="html">
   <div id="species-detail-container">
-    <species-header :title="species.name" />
+    <h3>{{ species.name }}</h3>
     <div id="species-info">
       <div id="species-picture">
-        <species-image :imageUrl="species.image_url"></species-image>
+        <img :src="species.image_url" />
       </div>
       <div id="species-text">
         <p>{{ species.description }}</p>
@@ -11,10 +11,10 @@
       </div>
       <div id="sightings-container">
         <div
-          class="sightings" v-for="(sighting, key) in sightings" :key="key">
+          class="sightings" v-for="(sighting, key) in species.sightings" :key="key">
           <p>{{ sighting.location }}</p>
           <p>{{ sighting.date }}</p>
-          <button v-on:click="AddSightingForm">Add a New Sighting &rarr;</button>
+          <!-- <button v-on:click="AddSightingForm">Add a New Sighting &rarr;</button> -->
         </div>
       </div>
     </div>
@@ -26,7 +26,7 @@ import AddSightingForm from "@/components/AddSightingForm";
 
 export default {
   name: 'speciesDetail',
-  props: ["selectedSpecies"],
+  props: ["species"],
   components: {
   }
 };

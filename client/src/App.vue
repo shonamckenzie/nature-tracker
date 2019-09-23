@@ -2,6 +2,7 @@
   <div id="app">
     <h3>Wildlife App</h3>
     <species-list :allSpecies="allSpecies"/>
+    <species-detail :species="selectedSpecies"/>
   </div>
 </template>
 
@@ -9,6 +10,7 @@
 import {eventBus} from './main.js';
 import SpeciesService from './services/SpeciesService';
 import SpeciesList from './components/SpeciesList';
+import SpeciesDetail from './components/SpeciesDetail';
 
 export default {
   name: 'app',
@@ -19,7 +21,8 @@ export default {
     }
   },
   components: {
-    'species-list': SpeciesList
+    'species-list': SpeciesList,
+    'species-detail': SpeciesDetail
   },
   mounted() {
     this.fetchData();
