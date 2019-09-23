@@ -27,4 +27,17 @@ export default {
   height: 20%;
   width: 20%;
 }
+
+.species-card {
+    box-sizing: border-box;
+    background: darkgreen;
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+
 </style>

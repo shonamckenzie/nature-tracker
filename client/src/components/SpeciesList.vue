@@ -22,6 +22,18 @@ export default {
 }
 </script>
 
-<style>
+<style lang="css" scoped>
+
+#species-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+}
+
+.species {
+  width: 30%;
+}
+
+
 
 </style>
