@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <h3>Wildlife App</h3>
-    <sightings-chart></sightings-chart>
+    <sightings-chart :allSpecies="allSpecies"></sightings-chart>
     <species-list :allSpecies="allSpecies"/>
     <species-detail :species="selectedSpecies"/>
   </div>

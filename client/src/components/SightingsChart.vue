@@ -46,6 +46,15 @@ export default {
                  }]
             }
         }
+    },
+    props: ['allSpecies'],
+    computed: {
+        speciesNames: function () {
+           return this.allSpecies.map(species => species.name)
+        },
+        sightingsCounts: function () {
+            return this.allSpecies.map(species => species.sightings.length)
+        }
     }
 }
 </script>
