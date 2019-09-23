@@ -6,14 +6,13 @@
         <img :src="species.image" :alt="species.name">
       </div>
       <div id="species-text">
-        <p>{{ species.description }}</p>
-        <p>{{ species.habitat }}</p>
+        <p v-if="species.description">Description: {{ species.description }}</p>
+        <p v-if="species.habitat">Habitat: {{ species.habitat }}</p>
       </div>
       <div id="sightings-container">
         <div
           class="sightings" v-for="(sighting, key) in species.sightings" :key="key">
-          <p>{{ sighting.location }}</p>
-          <p>{{ sighting.date }}</p>
+          <p v-if="sighting.location">Location Sighted: {{ sighting.location }}<span v-if="sighting.date"> Date Sighted: {{ sighting.date }}</span></p>
           <!-- <button v-on:click="AddSightingForm">Add a New Sighting &rarr;</button> -->
         </div>
       </div>
