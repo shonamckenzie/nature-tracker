@@ -1,7 +1,8 @@
 <template lang="html">
 <div class="species-card">
   <h3>{{ species.name }}</h3>
-  <p>Sightings: {{ species.sightings }}</p>
+  <p>About: {{ species.about }}</p>
+  <img id="species-image" :src="species.image" :alt="species.name" />
   <button v-on:click="displayInfo">More Info &rarr;</button>
 </div>
 </template>
@@ -22,5 +23,8 @@ export default {
 </script>
 
 <style lang="css" scoped>
-
+#species-image {
+  height: 20%;
+  width: 20%;
+}
 </style>
