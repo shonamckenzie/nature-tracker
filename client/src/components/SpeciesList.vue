@@ -24,13 +24,16 @@ export default {
 #species-list {
   display: flex;
   flex-direction: row;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .species {
-  display: grid;
+  /* display: grid; */
+  min-width: 300px;
   border-radius: 30%;
-  width: 30%;
+  /* width: 30%; */
+  flex-basis: 30%;
 }
 
 

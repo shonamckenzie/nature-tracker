@@ -37,7 +37,7 @@ export default {
           {
             name: "Total Sightings",
             data: this.allSpecies.map(species => species.sightings.length),
-            color: '#4f2d20',
+            color: '#0B6E4F',
             events: {
               click: (event) => {
                 this.selectSpecies(event.target.point.x)
@@ -57,8 +57,9 @@ export default {
 };
 </script>
 
-<style lang="css" scoped>
+<style>
 .chart {
   padding: 10px;
+  width: 40%;
 }
 </style>
