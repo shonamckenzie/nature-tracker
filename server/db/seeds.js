@@ -13,7 +13,7 @@ db.species.insertMany(
     "sightings": [
       {
         "location": "Falkirk",
-        "date": "2019-09-18",
+        "date": "18-09-2019",
         "locationLat": "56.001877",
         "locationLon": "-3.783913"
       }
@@ -29,13 +29,13 @@ db.species.insertMany(
     "sightings": [
       {
         "location": "East Kilbride",
-        "date": "2019-09-01",
+        "date": "01-09-2019",
         "locationLat": "57.104542",
         "locationLon": "-7.328500"
       },
       {
         "location": "Edinburgh",
-        "date": "2019-09-02",
+        "date": "02-09-2019",
         "locationLat": "55.953251",
         "locationLon": "-3.188267"
       }
@@ -51,13 +51,13 @@ db.species.insertMany(
     "sightings": [
       {
         "location": "Doune",
-        "date": "2019-07-14",
+        "date": "14-07-2019",
         "locationLat": "56.201541",
         "locationLon": "-4.040565"
       },
       {
         "location": "Stirling",
-        "date": "2019-05-21",
+        "date": "21-05-2019",
         "locationLat": "56.116523",
         "locationLon": "-3.936903"
       }
@@ -73,7 +73,7 @@ db.species.insertMany(
     "sightings": [
       {
         "location": "Perth and Kinross",
-        "date": "2019-08-21",
+        "date": "21-08-2019",
         "locationLat": "56.694138",
         "locationLon": "4.173603"
       }
@@ -89,7 +89,7 @@ db.species.insertMany(
     "sightings": [
       {
         "location": "North Berwick",
-        "date": "2019-05-09",
+        "date": "09-05-2019",
         "locationLat": "56.057158",
         "locationLon": "-2.802922"
       }
@@ -105,13 +105,13 @@ db.species.insertMany(
     "sightings": [
       {
         "location": "Clackmannanshire",
-        "date": "2019-08-08",
+        "date": "08-08-2019",
         "locationLat": "56.147068",
         "locationLon": "-3.850709"
       },
       {
         "location": "Linlithgow",
-        "date": "2019-09-17",
+        "date": "17-09-2019",
         "locationLat": "55.978371",
         "locationLon": "-3.594230"
       }
@@ -127,13 +127,13 @@ db.species.insertMany(
     "sightings": [
       {
         "location": "Clackmannanshire",
-        "date": "2019-06-16",
+        "date": "16-06-2019",
         "locationLat": "56.147068",
         "locationLon": "-3.850709"
       },
       {
         "location": "West Linton",
-        "date": "2019-06-30",
+        "date": "30-06-2019",
         "locationLat": "55.726855",
         "locationLon": "-3.436863"
       }
@@ -149,13 +149,13 @@ db.species.insertMany(
     "sightings": [
       {
         "location": "Carron Valley",
-        "date": "2019-09-21",
+        "date": "21-09-2019",
         "locationLat": "56.031593",
         "locationLon": "-4.049818"
       },
       {
         "location": "Dunfermline",
-        "date": "2019-07-27",
+        "date": "27-07-2019",
         "locationLat": "56.068703",
         "locationLon": "-3.467397"
       }
@@ -171,7 +171,7 @@ db.species.insertMany(
     "sightings": [
       {
         "location": "Biggar",
-        "date": "2019-06-20",
+        "date": "20-06-2019",
         "locationLat": "55.61667",
         "locationLon": "-3.51667"
       }
@@ -187,7 +187,7 @@ db.species.insertMany(
     "sightings": [
       {
         "location": "Blair Atholl",
-        "date": "2019-08-16",
+        "date": "16-08-2019",
         "locationLat": "56.76559",
         "locationLon": "-3.861007"
       }
