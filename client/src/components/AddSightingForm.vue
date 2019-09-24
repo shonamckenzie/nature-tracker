@@ -19,14 +19,6 @@
       <label for="location">Location Sighted:</label>
       <input type="text" id="location" v-model="location" required />
     </div>
-    <div>
-      <label for="locationLat">Location Latitude:</label>
-      <input type="number" id="locationLat" v-model="locationLat" />
-    </div>
-    <div>
-      <label for="locationLon">Location Longitude:</label>
-      <input type="number" id="locationLon" v-model="locationLon" />
-    </div>
     <input type="submit" value="Add Sighting">
   </form>
 </template>
@@ -42,8 +34,6 @@ export default {
       selectedSpecies: this.species,
       date: null,
       location: "",
-      locationLat: null,
-      locationLon: null
     };
   },
   methods: {
@@ -52,8 +42,6 @@ export default {
       const newSighting = {
         date: this.date,
         location: this.location,
-        locationLat: this.locationLat,
-        locationLon: this.locationLon
       };
       const speciesToUpdate = this.speciesOptions.length > 1 ? this.selectedSpecies : this.speciesOptions;
       speciesToUpdate.sightings.push(newSighting);
@@ -61,9 +49,7 @@ export default {
       SpeciesService.updateSpecies(speciesToUpdate._id, updatedSightings);
       this.selectedSpecies = null;
       this.date = null,
-      this.location = "",
-      this.locationLat = null,
-      this.locationLon = null
+      this.location = ""
     }
   }
 };
