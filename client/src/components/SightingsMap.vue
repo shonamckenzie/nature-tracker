@@ -26,6 +26,11 @@ export default {
         accessToken: key.token
       }
     ).addTo(sightingsMap);
+    this.allSightings.forEach(sighting => {
+      L.marker([sighting.locationLat, sighting.locationLon])
+      .bindPopup(`<b> ${sighting.name} </b> sighted ${sighting.date}`)
+      .addTo(sightingsMap)
+    });
   },
   computed : {
     allSightings: function () {
@@ -38,9 +43,11 @@ export default {
         });
       });
       return sightingsAccumulator;
-    }
+    },
   }
 };
+
+
 </script>
 
 <style>
