@@ -37,6 +37,7 @@ export default {
   margin: 20px;
   display: flex;
   flex-direction: column;
+  border-radius: 10px;
 }
 
 button {
