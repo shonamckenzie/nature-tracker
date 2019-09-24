@@ -1,4 +1,4 @@
-<template>
+<template lang="html">
   <div class="chart">
     <highcharts id="barChart" :options="chartOptions"></highcharts>
   </div>
@@ -34,7 +34,8 @@ export default {
         series: [
           {
             name: "Total Sightings",
-            data: this.allSpecies.map(species => species.sightings.length)
+            data: this.allSpecies.map(species => species.sightings.length),
+            color: '#4f2d20'
           }
         ]
       };
@@ -44,5 +45,8 @@ export default {
 };
 </script>
 
-<style>
+<style lang="css" scoped>
+.chart {
+  padding: 10px;
+}
 </style>
