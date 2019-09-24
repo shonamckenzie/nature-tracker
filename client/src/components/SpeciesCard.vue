@@ -3,7 +3,9 @@
     <h3>{{ species.name }}</h3>
     <p>{{ species.about }}</p>
     <img id="species-image" :src="species.image" :alt="species.name" />
-    <button v-on:click="displayInfo">Find Out More! &rarr;</button>
+
+    <button v-on:click="displayInfo"><a href="#top">Find Out More! &rarr;</a></button>
+
   </div>
 </template>
 
