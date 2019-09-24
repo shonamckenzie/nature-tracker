@@ -62,7 +62,10 @@ export default {
 <style lang="css" scoped>
   .top-section {
       display: flex;
-      background-color: #ff9d1e;
+      background-color: #DDB771;
+      align-items: center;
+      justify-content: space-around;
+      border-radius: 10px;
   }
 
   h1 {
