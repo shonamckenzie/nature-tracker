@@ -81,7 +81,7 @@ db.species.insertMany(
   },
   {
     "name": "Greylag Goose",
-    "about": "The Greylag Goose is a species of large goose in the waterfowl family 'Anatidae'. Greylag geese travel to their northerly breeding grounds in spring, nesting on moorlands, in marshes, around lakes and on coastal islands.",
+    "about": "The Greylag Goose is a species of large goose in the waterfowl family 'Anatidae'. Greylag geese travel to their northerly breeding grounds in spring, nesting on moorlands, in marshes, and around lakes.",
     "description": "The Greylag Goose has mottled and barred grey and white plumage and an orange beak and pink legs. They feed on grass, sea clubrush, berries, duckweed and floating sweetgrass.",
     "habitat": "Semi-aquatic habitats, estuaries, marshes and flooded fields.",
     "image": "images/goose.jpg",
@@ -141,7 +141,7 @@ db.species.insertMany(
   },
   {
     "name": "Buzzard",
-    "about": "The common Buzzard is a medium to large bird of prey which has a large range.The buzzard feeds mainly on small rodents such as voles. The species lives in most of Europe and extends its range into Asia, mainly western Russia.",
+    "about": "The common Buzzard is a medium to large bird of prey which has a large range.The buzzard feeds mainly on small rodents such as voles. The species lives in most of Europe and extends its range into Asia.",
     "description": "The buzzard builds a nest typically in trees and hunts from a perch. Most buzzards are dark brown on the uppserside of the head and mantle, A pale U across breast is often present. The tail will usuall be narrowly barred grey-brown and dark brown with a pale tip.",
     "habitat": "Woodlands, forest edge or shelterbelts",
     "image": "images/buzzard.jpg",
