@@ -1,7 +1,7 @@
 <template lang="html">
   <div class="species-card">
     <h3>{{ species.name }}</h3>
-    <p>About: {{ species.about }}</p>
+    <p>{{ species.about }}</p>
     <img id="species-image" :src="species.image" :alt="species.name" />
     <button v-on:click="displayInfo">Find Out More! &rarr;</button>
   </div>
@@ -24,25 +24,30 @@ export default {
 
 <style lang="css" scoped>
 #species-image {
+  height: 10em;
+  object-fit: cover;
   width: 15em;
+  max-width: 98%;
 }
 
 .species-card {
   align-items: center;
   align-content:space-between;
   box-sizing: content-box;
-  background: darkgreen;
+  background: #0B6E4F;
   margin-bottom: 20px;
   padding: 20px;
   margin: 20px;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   border-radius: 10px;
+  color: lightgrey;
 }
 
 button {
-  background-color: brown;
-  color: white;
+  background-color: #DDB771;
+  color: black;
 }
 
 

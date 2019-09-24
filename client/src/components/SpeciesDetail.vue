@@ -1,5 +1,5 @@
 <template lang="html">
-  <div id="species-detail-container">
+  <div v-if="species._id" id="species-detail-container">
     <h3>{{ species.name }}</h3>
     <div id="species-info">
       <!-- <div id="species-image"> -->
@@ -13,9 +13,9 @@
       <div id="sightings-container">
         <div
           class="sightings" v-for="(sighting, key) in species.sightings" :key="key">
-          <p v-if="sighting.location">Location Sighted: {{ sighting.location }}<span v-if="sighting.date"> Date Sighted: {{ sighting.date }}</span></p>
+          <p v-if="sighting.location">Location Sighted: {{ sighting.location }}<span v-if="sighting.date">  |  Date Sighted: {{ sighting.date }}</span></p>
         </div>
-          <add-sighting-form v-if="species._id" :speciesOptions="species"/>
+          <add-sighting-form  :speciesOptions="species"/>
       </div>
     </div>
   </div>
@@ -35,8 +35,8 @@ export default {
 
 <style lang="css" scoped>
 #species-image {
-  height: 10%;
-  width: 10%;
+  height: 8em;
+  width: 12em;
 }
 #species-detail-container {
   width: 60%;

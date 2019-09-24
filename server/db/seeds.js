@@ -165,7 +165,7 @@ db.species.insertMany(
     "name": "Brown Hare",
     "about": "The Brown Hare is among the largest hare species.  They are generally nocturnal and shy in nature. Hares don't use burrows, but make a small depression in the ground among long grass (form).",
     "description": "The brown hare has very long black-tipped ears; large, long, powerful hind legs. They are much redder than the mountain hare, and with a black-topped tail. Tender grass shoots, including cereal crops, are their main foods.",
-    "habitat": "Grassland, arable land",
+    "habitat": "Grassland, arable land.",
     "image": "images/hare.jpg",
     "funFacts": "Brown hares live in very exposed habitats, and they rely on acute senses and running at speeds of up to 45mph to evade predators.",
     "sightings": [
@@ -179,7 +179,7 @@ db.species.insertMany(
   },
   {
     "name": "Capercaillie",
-    "about": "The Capercaillie is the largest member of the grouse family.  In the UK they are only found in Scotland",
+    "about": "The Capercaillie is the largest member of the grouse family.  In the UK they are only found in Scotland.",
     "description": "The male capercaillie body feathers are dark grey to dark brown with a metallic green breast and bright red spot of naked skin above each eye. Their diet consists of buds, leaves, berries, insects and conifer needles",
     "habitat": "Mature conifer forests with open canopy.",
     "image": "images/capercaillie.jpg",
