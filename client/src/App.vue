@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="top-level-container">
-      <h3>Wildlife App</h3>
+      <h1>Nature Tracker</h1>
       <div class="top-section">
         <sightings-chart :allSpecies="allSpecies"></sightings-chart>
         <species-detail :species="selectedSpecies"/>
@@ -58,5 +58,9 @@ export default {
   .top-section {
       display: flex;
       background-color: #ff9d1e;
+  }
+
+  h1 {
+    text-align: center;
   }
 </style>
