@@ -7,6 +7,7 @@ export default {
       .then(coords => coords.json())
       .then(coordData => {
 
+
         const locationData = coordData[0]
         return {
           lat: locationData.lat,
