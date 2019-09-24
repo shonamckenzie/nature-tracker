@@ -57,8 +57,9 @@ export default {
 };
 </script>
 
-<style lang="css" scoped>
+<style>
 .chart {
   padding: 10px;
+  width: 40%;
 }
 </style>
