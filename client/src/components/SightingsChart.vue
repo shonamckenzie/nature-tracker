@@ -40,8 +40,7 @@ export default {
             color: '#4f2d20',
             events: {
               click: (event) => {
-                // this.displayInfo()
-                console.log(event.target.point.x)
+                this.selectSpecies(event.target.point.x)
               }
             }
           }
@@ -51,10 +50,8 @@ export default {
   },
   props: ["allSpecies"],
   methods: {
-    displayInfo(bar, index) {
-      eventBus.$emit('species-selected', this.species[index])
-      console.log(this.species[index]);
-      
+    selectSpecies(index) {
+      eventBus.$emit('species-selected', this.allSpecies[index])
     }
   }
 };
