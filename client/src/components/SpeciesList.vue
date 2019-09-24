@@ -3,7 +3,7 @@
     <div class="species" v-for="species in allSpecies" :key="species.name">
       <species-card :species="species"></species-card>
     </div>
-    <add-sighting-form :allSpecies="allSpecies"/>
+    <add-sighting-form :speciesOptions="allSpecies"/>
   </div>
 </template>
 
@@ -22,6 +22,20 @@ export default {
 }
 </script>
 
-<style>
+<style lang="css" scoped>
+
+#species-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+}
+
+.species {
+  display: grid;
+  border-radius: 30%;
+  width: 30%;
+}
+
+
 
 </style>

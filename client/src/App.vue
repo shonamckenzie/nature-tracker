@@ -3,7 +3,7 @@
     <div class="top-level-container">
       <h3>Wildlife App</h3>
       <div class="top-section">
-        <sightings-bar-chart :barChart="barChart"/>
+        <sightings-chart :allSpecies="allSpecies"></sightings-chart>
         <species-detail :species="selectedSpecies"/>
       </div>
       <species-list :allSpecies="allSpecies"/>
@@ -16,7 +16,7 @@ import {eventBus} from './main.js';
 import SpeciesService from './services/SpeciesService';
 import SpeciesList from './components/SpeciesList';
 import SpeciesDetail from './components/SpeciesDetail';
-import SightingsBarChart from './components/SightingsBarChart';
+import SightingsChart from './components/SightingsChart';
 
 export default {
   name: 'app',
@@ -30,7 +30,7 @@ export default {
   components: {
     'species-list': SpeciesList,
     'species-detail': SpeciesDetail,
-    'sightings-bar-chart': SightingsBarChart
+    'sightings-chart': SightingsChart
   },
   mounted() {
     this.fetchData();

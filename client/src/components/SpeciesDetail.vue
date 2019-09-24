@@ -14,8 +14,8 @@
         <div
           class="sightings" v-for="(sighting, key) in species.sightings" :key="key">
           <p v-if="sighting.location">Location Sighted: {{ sighting.location }}<span v-if="sighting.date"> Date Sighted: {{ sighting.date }}</span></p>
-          <!-- <button v-on:click="AddSightingForm">Add a New Sighting &rarr;</button> -->
         </div>
+          <add-sighting-form v-if="species._id" :speciesOptions="species"/>
       </div>
     </div>
   </div>
@@ -28,6 +28,7 @@ export default {
   name: 'speciesDetail',
   props: ["species"],
   components: {
+    'add-sighting-form': AddSightingForm
   }
 };
 </script>
