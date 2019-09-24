@@ -5,6 +5,8 @@
 </template>
 
 <script>
+import { eventBus } from '@/main.js'
+
 export default {
   computed: {
     chartOptions() {
@@ -35,13 +37,26 @@ export default {
           {
             name: "Total Sightings",
             data: this.allSpecies.map(species => species.sightings.length),
-            color: '#4f2d20'
+            color: '#4f2d20',
+            events: {
+              click: (event) => {
+                // this.displayInfo()
+                console.log(event.target.point.x)
+              }
+            }
           }
         ]
       };
     }
   },
-  props: ["allSpecies"]
+  props: ["allSpecies"],
+  methods: {
+    displayInfo(bar, index) {
+      eventBus.$emit('species-selected', this.species[index])
+      console.log(this.species[index]);
+      
+    }
+  }
 };
 </script>
 
