@@ -43,27 +43,26 @@ export default {
       const newSighting = {
         date: this.date,
         location: this.location,
-        locationLat: this.locationLat,
-        locationLon: this.locationLon
+        locationLat: "",
+        locationLon: ""
       };
 
       CoordinatesService.getCoord(this.location)
         .then(coord => {
+          newSighting.locationLat = coord.lat;
+          newSighting.locationLon = coord.lon;
+          const speciesToUpdate = this.speciesOptions.length > 1 ? this.selectedSpecies : this.speciesOptions;
+          speciesToUpdate.sightings.push(newSighting);
+          const updatedSightings = { sightings: speciesToUpdate.sightings };
           SpeciesService.updateSpecies(speciesToUpdate._id, updatedSightings);
           this.selectedSpecies = null;
           this.date = null,
-          this.location = ""})
+          this.location = ""
+        })
         .catch(error=>console.error(error))
 
 
-      const speciesToUpdate = this.speciesOptions.length > 1 ? this.selectedSpecies : this.speciesOptions;
-      speciesToUpdate.sightings.push(newSighting);
-      const updatedSightings = { sightings: speciesToUpdate.sightings };
-      SpeciesService.updateSpecies(speciesToUpdate._id, updatedSightings);
-      this.selectedSpecies = null;
-      this.date = null,
-      this.location = ""
-    }
+      }
   }
 };
 </script>

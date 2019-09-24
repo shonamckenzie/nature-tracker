@@ -5,6 +5,15 @@ export default {
 
     return fetch(url)
       .then(coords => coords.json())
+      .then(coordData => {
+
+        const locationData = coordData[0]
+        return {
+          lat: locationData.lat,
+          lon: locationData.lon
+        }
+      })
+
       .catch(error=>console.log(error))
   }
 }
