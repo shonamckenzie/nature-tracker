@@ -12,6 +12,9 @@
       <div class="add-sighting-form-wrapper">
         <add-sighting-form :speciesOptions="allSpecies"/>
       </div>
+      <div class="sightings-map-wrapper">
+        <sightings-map :speciesOption="allSpecies"/>
+      </div>
     </div>
   </div>
 </template>
@@ -23,6 +26,7 @@ import SpeciesList from './components/SpeciesList';
 import SpeciesDetail from './components/SpeciesDetail';
 import SightingsChart from './components/SightingsChart';
 import AddSightingForm from './components/AddSightingForm';
+import SightingsMap from './components/SightingsMap';
 
 export default {
   name: 'app',
@@ -37,7 +41,8 @@ export default {
     'species-list': SpeciesList,
     'species-detail': SpeciesDetail,
     'sightings-chart': SightingsChart,
-    'add-sighting-form': AddSightingForm
+    'add-sighting-form': AddSightingForm,
+    'sightings-map': SightingsMap,
   },
   mounted() {
     this.fetchData();
