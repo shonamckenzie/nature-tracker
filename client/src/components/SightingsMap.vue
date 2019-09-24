@@ -31,7 +31,9 @@ export default {
     allSightings: function () {
       const sightingsAccumulator = [];
       this.speciesOptions.forEach(species => {
+        const name = species.name;
         species.sightings.forEach(sighting => {
+          sighting.name = name;
           sightingsAccumulator.push(sighting);
         });
       });
