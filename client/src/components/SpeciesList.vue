@@ -3,7 +3,7 @@
     <div class="species" v-for="species in allSpecies" :key="species.name">
       <species-card :species="species"></species-card>
     </div>
-    <add-sighting-form :allSpecies="allSpecies"/>
+    <add-sighting-form :speciesOptions="allSpecies"/>
   </div>
 </template>
 
