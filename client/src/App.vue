@@ -73,4 +73,9 @@ export default {
     height: 50px;
   }
 
+.add-sighting-form-wrapper {
+  display: block;
+  text-align: center;
+
+}
 </style>
