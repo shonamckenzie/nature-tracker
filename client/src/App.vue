@@ -60,6 +60,7 @@ export default {
       background-color: #DDB771;
       align-items: center;
       justify-content: space-around;
+      border-radius: 10px;
   }
 
   h1 {

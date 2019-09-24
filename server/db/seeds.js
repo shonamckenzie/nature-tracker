@@ -21,11 +21,11 @@ db.species.insertMany(
   },
   {
     "name": "Red Fox",
-    "about": "The Red fox is the largest of the true foxes and is present across the entire Northern Hemisphere. They make their homes by digging burrows (dens) in the ground",
+    "about": "The Red fox is the largest of the true foxes and is present across the entire Northern Hemisphere. They make their homes by digging burrows (dens) in the ground.",
     "description": "The Red fox has an elongated body and relatively short limbs, their coats are generally bright reddish-rusty with yellow tints. The red fox primarily feeds on small rodents, though it may also target rabbits, game birds, reptiles, fruit and vegetable matter is also eaten sometimes.",
-    "habitat": "Forests, grasslands, woodland and also gardens and urban areas",
+    "habitat": "Forests, grasslands, woodland and also gardens and urban areas.",
     "image": "images/fox.jpg",
-    "funFacts": "A male fox is called a Dog, a female fox is called a Vixen, a young fox is called a Kit. A group of foxes is called a Skulk. Like a cat the foxes thick tail (or brush) aids it's balance",
+    "funFacts": "A male fox is called a Dog, a female fox is called a Vixen, a young fox is called a Kit. A group of foxes is called a Skulk. Like a cat the foxes thick tail (or brush) aids it's balance.",
     "sightings": [
       {
         "location": "East Kilbride",
@@ -44,10 +44,10 @@ db.species.insertMany(
   {
     "name": "Red Squirrel",
     "about": "The red squirrel is a species of tree squirrel common throughout Europe and Asia. The squirrel makes a nest out of twigs in a branch-fork, forming a domed structure about 25 to 30 cm in diameter.",
-    "description": "The red squirrel has a typical head-and-body length of 19 to 23 cm, a tail length of 15 to 20cm which helps them balance and steer when jumping from tree to tree. The red squirrel has a red coat with white-cream underside and sharp curved claws. They eat seeds of trees, fungi, nuts, berries and young shoots",
-    "habitat": "Woods, scots pine & norway spruce trees",
+    "description": "The red squirrel has a typical head-and-body length of 19 to 23 cm, a tail length of 15 to 20cm which helps them balance and steer when jumping from tree to tree. The red squirrel has a red coat with white-cream underside and sharp curved claws. They eat seeds of trees, fungi, nuts, berries and young shoots.",
+    "habitat": "Woods, scots pine & norway spruce trees.",
     "image": "images/squirrel.jpg",
-    "funFacts": "Each litter averages 3 young squirrels, called kits. They are born blind and deaf and devlop their teeth by 42 days",
+    "funFacts": "Each litter averages 3 young squirrels, called kits. They are born blind and deaf and devlop their teeth by 42 days.",
     "sightings": [
       {
         "location": "Doune",
@@ -65,11 +65,11 @@ db.species.insertMany(
   },
   {
     "name": "Red Deer",
-    "about": "The red deer is one of the largest deer species and inhabits most of Europe, parts of Asia and Africa. They generally spend winters at lower altitudes and in summer migrate to higher elevations",
+    "about": "The red deer is one of the largest deer species and inhabits most of Europe, parts of Asia and Africa. They generally spend winters at lower altitudes and in summer migrate to higher elevations.",
     "description": "Red Deer have red-brown coat colour with no spots in adults. Antlers of males are usually branched, with up to 3 branches. Rump pattern creamy, not delineated by black lines. Grasses, sedges and rushes comprise the bulk of the summer diet, with dwarf-shrubs such as heather and blueberry being more important in winter. Young trees are also browsed.",
-    "habitat": "Upland & moorland, coniferous woodland, heathland",
+    "habitat": "Upland & moorland, coniferous woodland, heathland.",
     "image": "images/deer.jpg",
-    "funFacts": "A soft covering known as velvet helps to protect newly forming antlers in the spring",
+    "funFacts": "A soft covering known as velvet helps to protect newly forming antlers in the spring.",
     "sightings": [
       {
         "location": "Perth and Kinross",
@@ -83,7 +83,7 @@ db.species.insertMany(
     "name": "Greylag Goose",
     "about": "The Greylag Goose is a species of large goose in the waterfowl family 'Anatidae'. Greylag geese travel to their northerly breeding grounds in spring, nesting on moorlands, in marshes, around lakes and on coastal islands.",
     "description": "The Greylag Goose has mottled and barred grey and white plumage and an orange beak and pink legs. They feed on grass, sea clubrush, berries, duckweed and floating sweetgrass.",
-    "habitat": "Semi-aquatic habitats, estuaries, marshes and flooded fields",
+    "habitat": "Semi-aquatic habitats, estuaries, marshes and flooded fields.",
     "image": "images/goose.jpg",
     "funFacts": "Greylag geese tend to bond in long-term partnerships. The female incubates the eggs for around 28 days while the male remains on guard.",
     "sightings": [
@@ -97,9 +97,9 @@ db.species.insertMany(
   },
   {
     "name": "Hedgehog",
-    "about": "The hedgehog is a well known species and a favourite in European gardens, both for it's appearance and it's preference for eating garden pests.",
+    "about": "The hedgehog is a well known species and a favourite in European gardens, both for it's appearance and it's preference for eating garden pests. Woodland hedgehogs have a lifespan of 2 - 5 years.",
     "description": "The Hedgehog has an unmistakable coat of several thousand spines along the back, speckled brown and cream. Brown pointed furry face, small black eyes and nose. Hedgehogs eat beetles, worms, caterpillars and slugs.",
-    "habitat": "Urban & gardens, grassland, mixed woodland, heathland, arable land",
+    "habitat": "Urban & gardens, grassland, mixed woodland, heathland, arable land.",
     "image": "images/hedgehog.jpg",
     "funFacts": "Hedgehogs travel about 1-2km each night, males more so than females. They return to the same daytime nest for a few days then use another.",
     "sightings": [
@@ -141,7 +141,7 @@ db.species.insertMany(
   },
   {
     "name": "Buzzard",
-    "about": "The common Buzzard is a medium to large bird of prey which has a large range.The buzzard feeds mainly on small rodents such as voles",
+    "about": "The common Buzzard is a medium to large bird of prey which has a large range.The buzzard feeds mainly on small rodents such as voles. The species lives in most of Europe and extends its range into Asia, mainly western Russia.",
     "description": "The buzzard builds a nest typically in trees and hunts from a perch. Most buzzards are dark brown on the uppserside of the head and mantle, A pale U across breast is often present. The tail will usuall be narrowly barred grey-brown and dark brown with a pale tip.",
     "habitat": "Woodlands, forest edge or shelterbelts",
     "image": "images/buzzard.jpg",
@@ -180,7 +180,7 @@ db.species.insertMany(
   {
     "name": "Capercaillie",
     "about": "The Capercaillie is the largest member of the grouse family.  In the UK they are only found in Scotland.",
-    "description": "The male capercaillie body feathers are dark grey to dark brown with a metallic green breast and bright red spot of naked skin above each eye. Their diet consists of buds, leaves, berries, insects and conifer needles",
+    "description": "The male capercaillie body feathers are dark grey to dark brown with a metallic green breast and bright red spot of naked skin above each eye. Their diet consists of buds, leaves, berries, insects and conifer needles.",
     "habitat": "Mature conifer forests with open canopy.",
     "image": "images/capercaillie.jpg",
     "funFacts": "A lek is a group of male animals that gather together to display, usually competing for females.",
