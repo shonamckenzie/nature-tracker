@@ -13,7 +13,7 @@
         <add-sighting-form :speciesOptions="allSpecies"/>
       </div>
       <div class="sightings-map-wrapper">
-        <sightings-map :speciesOption="allSpecies"/>
+        <sightings-map :speciesOptions="allSpecies"/>
       </div>
     </div>
   </div>

@@ -8,6 +8,7 @@ const key = require("../map-key");
 
 export default {
   name: "sightings-map",
+  props: ['speciesOptions'],
   components: {
     LMap,
     LTileLayer,
@@ -25,6 +26,17 @@ export default {
         accessToken: key.token
       }
     ).addTo(sightingsMap);
+  },
+  computed : {
+    allSightings: function () {
+      const sightingsAccumulator = [];
+      this.speciesOptions.forEach(species => {
+        species.sightings.forEach(sighting => {
+          sightingsAccumulator.push(sighting);
+        });
+      });
+      return sightingsAccumulator;
+    }
   }
 };
 </script>
