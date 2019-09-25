@@ -77,4 +77,12 @@ export default {
   margin-right: auto;
   text-align: left;
 }
+
+label {
+  font-family: 'Open Sans', sans-serif;
+  margin-right: 10px;
+}
+
+
+
 </style>
