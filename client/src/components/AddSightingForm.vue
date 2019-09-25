@@ -20,6 +20,7 @@
       <label for="location">Location Sighted:</label>
       <input type="text" id="location" v-model="location" required />
     </div>
+    <br>
     <input type="submit" value="Add Sighting">
   </form>
   </div>

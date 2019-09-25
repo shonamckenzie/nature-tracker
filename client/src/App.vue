@@ -2,6 +2,7 @@
   <div id="app">
     <div class="top-level-container">
       <h1>Nature Tracker</h1>
+      <h2>Welcome to Nature Tracker! Here you can learn more about different Scottish fauna. Have you seen any in your area? Then please let us know by using one of our submission forms. Good luck spotting!</h2>
       <div class="top-section">
         <sightings-chart :allSpecies="allSpecies"></sightings-chart>
         <species-detail :species="selectedSpecies"/>
@@ -70,16 +71,27 @@ export default {
 
 h1 {
   text-align: center;
-  height: 50px;
   font-family: 'Indie Flower', cursive;
+  font-size: 85px;
+  margin: inherit;
+}
+
+h2 {
+  text-align: center;
+  height: 50px;
+  margin-bottom: 50px;
+  font-family: 'Indie Flower', cursive;
+
 }
 
 h3 {
   font-family: 'Indie Flower', cursive;
+  font-size: 40px;
 }
 
 p {
   font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
 }
 
 .add-sighting-form-wrapper {
