@@ -1,6 +1,6 @@
 <template lang="html">
   <div v-if="species._id" id="species-detail-container">
-    <h3>{{ species.name }}</h3>
+    <h3 id="details">{{ species.name }}</h3>
     <div id="species-info">
       <!-- <div id="species-image"> -->
       <img id="species-image" :src="species.image" :alt="species.name" />
