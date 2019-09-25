@@ -1,7 +1,7 @@
 <template>
   <div id="form">
   <form id="formContent" v-on:submit="addSighting" method="post">
-    <h3>Add a New Sighting</h3>
+    <h3>Have you spotted me?</h3>
     <div v-if="speciesOptions.length > 1">
       <label for="name">Species:</label>
       <select id="name" v-model="selectedSpecies" required>

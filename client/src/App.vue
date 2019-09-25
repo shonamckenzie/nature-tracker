@@ -59,19 +59,28 @@ export default {
 }
 </script>
 
-<style lang="css" scoped>
-  .top-section {
-      display: flex;
-      background-color: #DDB771;
-      align-items: center;
-      justify-content: space-around;
-      border-radius: 10px;
-  }
+<style lang="css">
+.top-section {
+  display: flex;
+  background-color: #DDB771;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+}
 
-  h1 {
-    text-align: center;
-    height: 50px;
-  }
+h1 {
+  text-align: center;
+  height: 50px;
+  font-family: 'Indie Flower', cursive;
+}
+
+h3 {
+  font-family: 'Indie Flower', cursive;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
 
 .add-sighting-form-wrapper {
   display: block;
