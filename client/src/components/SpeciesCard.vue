@@ -4,7 +4,7 @@
     <p>{{ species.about }}</p>
     <img id="species-image" :src="species.image" :alt="species.name" />
 
-    <button v-on:click="displayInfo"><a href="#top">Find Out More! &rarr;</a></button>
+    <h3 v-on:click="displayInfo"> <a href="#top">Find Out More!</a></h3>
 
   </div>
 </template>
@@ -47,10 +47,10 @@ export default {
   color: lightgrey;
 }
 
-button {
-  background-color: #DDB771;
-  color: black;
+a {
+  color: #DDB771;
 }
+
 
 
 
