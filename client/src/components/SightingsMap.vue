@@ -1,6 +1,8 @@
 
 <template>
-  <div id="sightings-map"></div>
+  <div id="map-wrapper">
+    <div id="sightings-map"></div>
+  </div>
 </template>
 
 <script>
@@ -70,7 +72,13 @@ export default {
 
 <style>
 #sightings-map {
+  margin-top: 20px;
   height: 400px;
-  width: 400px;
+  width: 50%;
+}
+
+#map-wrapper {
+  display: flex;
+  justify-content: center;
 }
 </style>
