@@ -12,8 +12,8 @@
       <div class="add-sighting-form-wrapper">
         <add-sighting-form :speciesOptions="allSpecies"/>
       </div>
+      </div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -68,4 +68,9 @@ export default {
     height: 50px;
   }
 
+.add-sighting-form-wrapper {
+  display: block;
+  text-align: center;
+
+}
 </style>

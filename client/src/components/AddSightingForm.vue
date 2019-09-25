@@ -1,5 +1,6 @@
 <template>
-  <form v-on:submit="addSighting" method="post">
+  <div id="form">
+  <form id="formContent" v-on:submit="addSighting" method="post">
     <h3>Add a New Sighting</h3>
     <div v-if="speciesOptions.length > 1">
       <label for="name">Species:</label>
@@ -21,6 +22,7 @@
     </div>
     <input type="submit" value="Add Sighting">
   </form>
+  </div>
 </template>
 
 <script>
@@ -68,4 +70,10 @@ export default {
 </script>
 
 <style>
+#formContent {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
 </style>
