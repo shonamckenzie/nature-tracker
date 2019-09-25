@@ -10,11 +10,11 @@
       <div class="species-list-wrapper">
         <species-list :allSpecies="allSpecies"/>
       </div>
-      <div class="add-sighting-form-wrapper">
-        <add-sighting-form :speciesOptions="allSpecies"/>
-      </div>
       <div class="sightings-map-wrapper">
         <sightings-map :speciesOptions="allSpecies"/>
+      </div>
+      <div class="add-sighting-form-wrapper">
+        <add-sighting-form :speciesOptions="allSpecies"/>
       </div>
     </div>
   </div>
