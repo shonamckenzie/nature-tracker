@@ -13,9 +13,15 @@ db.species.insertMany(
     "sightings": [
       {
         "location": "Falkirk",
-        "date": "18-09-2019",
+        "date": "2019-09-18",
         "locationLat": "56.001877",
         "locationLon": "-3.783913"
+      },
+      {
+        "location": "Arran",
+        "date": "2019-02-10",
+        "locationLat": "55.533089",
+        "locationLon": "-5.288410"
       }
     ]
   },
@@ -29,15 +35,33 @@ db.species.insertMany(
     "sightings": [
       {
         "location": "East Kilbride",
-        "date": "01-09-2019",
-        "locationLat": "57.104542",
-        "locationLon": "-7.328500"
+        "date": "2019-09-01",
+        "locationLat": "55.756317",
+        "locationLon": "-4.187419"
       },
       {
         "location": "Edinburgh",
-        "date": "02-09-2019",
+        "date": "2019-09-02",
         "locationLat": "55.953251",
         "locationLon": "-3.188267"
+      },
+      {
+        "location": "Inverurie",
+        "date": "2019-01-01",
+        "locationLat": "57.268092",
+        "locationLon": "-2.387724"
+      },
+      {
+        "location": "Oban",
+        "date": "2019-03-03",
+        "locationLat": "56.383454",
+        "locationLon": "-5.490310"
+      },
+      {
+        "location": "Harris",
+        "date": "2019-02-10",
+        "locationLat": "57.992679",
+        "locationLon": "-6.865445"
       }
     ]
   },
@@ -51,13 +75,13 @@ db.species.insertMany(
     "sightings": [
       {
         "location": "Doune",
-        "date": "14-07-2019",
+        "date": "2019-07-14",
         "locationLat": "56.201541",
         "locationLon": "-4.040565"
       },
       {
         "location": "Stirling",
-        "date": "21-05-2019",
+        "date": "2019-05-21",
         "locationLat": "56.116523",
         "locationLon": "-3.936903"
       }
@@ -73,9 +97,21 @@ db.species.insertMany(
     "sightings": [
       {
         "location": "Perth and Kinross",
-        "date": "21-08-2019",
+        "date": "2019-08-21",
         "locationLat": "56.694138",
         "locationLon": "4.173603"
+      },
+      {
+        "location": "Glencoe",
+        "date": "2019-08-18",
+        "locationLat": "56.659953",
+        "locationLon": "-5.074208"
+      },
+      {
+        "location": "Aviemore",
+        "date": "2019-09-19",
+        "locationLat": "57.183076",
+        "locationLon": "-3.830359"
       }
     ]
   },
@@ -89,7 +125,7 @@ db.species.insertMany(
     "sightings": [
       {
         "location": "North Berwick",
-        "date": "09-05-2019",
+        "date": "2019-09-05",
         "locationLat": "56.057158",
         "locationLon": "-2.802922"
       }
@@ -105,15 +141,27 @@ db.species.insertMany(
     "sightings": [
       {
         "location": "Clackmannanshire",
-        "date": "08-08-2019",
+        "date": "2019-08-08",
         "locationLat": "56.147068",
         "locationLon": "-3.850709"
       },
       {
         "location": "Linlithgow",
-        "date": "17-09-2019",
+        "date": "2019-09-17",
         "locationLat": "55.978371",
         "locationLon": "-3.594230"
+      },
+      {
+        "location": "Dunkeld",
+        "date": "2019-06-26",
+        "locationLat": "56.556872",
+        "locationLon": "-3.594016"
+      },
+      {
+        "location": "Fort William",
+        "date": "2019-04-15",
+        "locationLat": "56.818802",
+        "locationLon": "-5.109660"
       }
     ]
   },
@@ -127,21 +175,27 @@ db.species.insertMany(
     "sightings": [
       {
         "location": "Clackmannanshire",
-        "date": "16-06-2019",
+        "date": "201906-16",
         "locationLat": "56.147068",
         "locationLon": "-3.850709"
       },
       {
         "location": "West Linton",
-        "date": "30-06-2019",
+        "date": "2019-06-30",
         "locationLat": "55.726855",
         "locationLon": "-3.436863"
+      },
+      {
+        "location": "Lesmahagow",
+        "date": "2019-02-14",
+        "locationLat": "55.633847",
+        "locationLon": "-3.882415"
       }
     ]
   },
   {
     "name": "Buzzard",
-    "about": "The common Buzzard is a medium to large bird of prey which has a large range.The buzzard feeds mainly on small rodents such as voles. The species lives in most of Europe and extends its range into Asia.",
+    "about": "The common Buzzard is a medium to large bird of prey which has a large range. The buzzard feeds mainly on small rodents such as voles and lives in most of Europe extending its range into Asia.",
     "description": "The buzzard builds a nest typically in trees and hunts from a perch. Most buzzards are dark brown on the uppserside of the head and mantle, A pale U across breast is often present. The tail will usuall be narrowly barred grey-brown and dark brown with a pale tip.",
     "habitat": "Woodlands, forest edge or shelterbelts",
     "image": "images/buzzard.jpg",
@@ -149,15 +203,21 @@ db.species.insertMany(
     "sightings": [
       {
         "location": "Carron Valley",
-        "date": "21-09-2019",
+        "date": "2019-09-21",
         "locationLat": "56.031593",
         "locationLon": "-4.049818"
       },
       {
         "location": "Dunfermline",
-        "date": "27-07-2019",
+        "date": "2019-07-27",
         "locationLat": "56.068703",
         "locationLon": "-3.467397"
+      },
+      {
+        "location": "Scalpay",
+        "date": "2019-03-12",
+        "locationLat": "57.295779",
+        "locationLon": "-5.967553"
       }
     ]
   },
@@ -171,9 +231,15 @@ db.species.insertMany(
     "sightings": [
       {
         "location": "Biggar",
-        "date": "20-06-2019",
+        "date": "2019-06-20",
         "locationLat": "55.61667",
         "locationLon": "-3.51667"
+      },
+      {
+        "location": "Harris",
+        "date": "2019-04-07",
+        "locationLat": "57.464735",
+        "locationLon": "-6.539736"
       }
     ]
   }
