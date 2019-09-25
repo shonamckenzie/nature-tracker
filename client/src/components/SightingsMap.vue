@@ -8,16 +8,17 @@ import { LMap, LTileLayer, LMarker } from "vue2-leaflet";
 const key = require("../map-key");
 export default {
   name: "sightings-map",
-  props: ['speciesOptions'],
+  props: ["speciesOptions"],
   components: {
     LMap,
     LTileLayer,
     LMarker
   },
-  data () {
+  data() {
     return {
-      sightingsMap: null
-      } 
+      sightingsMap: null,
+      markerLayer: null
+    };
   },
   mounted() {
     this.sightingsMap = L.map("sightings-map").setView([56.5, -4], 6);
@@ -26,29 +27,33 @@ export default {
       {
         attribution:
           'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-        maxZoom: 17,
+        maxZoom: 18,
         id: "mapbox.streets",
         accessToken: key.token
       }
     ).addTo(this.sightingsMap);
+
+    this.markerLayer = L.layerGroup().addTo(this.sightingsMap);
+
     this.addMarkers();
   },
   methods: {
-    addMarkers: function () {
-    this.allSightings.forEach(sighting => {
-      L.marker([sighting.locationLat, sighting.locationLon])
-      .bindPopup(`<b> ${sighting.name} </b> sighted ${sighting.date}`)
-      .addTo(this.sightingsMap)
-    });
+    addMarkers: function() {
+      this.markerLayer.clearLayers();
+      this.allSightings.forEach(sighting => {
+        L.marker([sighting.locationLat, sighting.locationLon])
+          .bindPopup(`<b> ${sighting.name} </b> sighted ${sighting.date}`)
+          .addTo(this.markerLayer);
+      });
     }
   },
   watch: {
-    allSightings: function () {
-      this.addMarkers()
+    allSightings: function() {
+      this.addMarkers();
     }
   },
-  computed : {
-    allSightings: function () {
+  computed: {
+    allSightings: function() {
       const sightingsAccumulator = [];
       this.speciesOptions.forEach(species => {
         const name = species.name;
@@ -58,7 +63,7 @@ export default {
         });
       });
       return sightingsAccumulator;
-    },
+    }
   }
 };
 </script>
