@@ -9,6 +9,9 @@
     "server:dev": "nodemon server.js",
     "seeds": "mongo < ./db/seeds.js"
   },
+  "engines": {
+    "node": "12.4.0"
+  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
